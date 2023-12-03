@@ -1,0 +1,49 @@
+{
+  "name": "@shraeyas/elastic-writeable-stream",
+  "version": "1.0.0",
+  "description": "Get a writeable stream for elastic search",
+  "main": "index.ts",
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc"
+  },
+  "tap": {
+    "ts": false,
+    "coverage": false,
+    "node-arg": [
+      "--no-warnings",
+      "--loader=ts-node/esm"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shraeyas/elastic-writeable-stream.git"
+  },
+  "keywords": [
+    "elasticsearch",
+    "stream",
+    "bulk",
+    "write",
+    "pino",
+    "transport",
+    "logging"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.10.0",
+    "@elastic/transport": "^8.3.4",
+    "elasticsearch": "^16.7.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/elasticsearch": "^5.0.43",
+    "@types/node": "^20.10.2"
+  }
+}
