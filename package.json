@@ -1,6 +1,6 @@
 {
   "name": "@shraeyas/elastic-writeable-stream",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Get a writeable stream for elastic search",
   "main": "index.ts",
   "exports": "./dist/index.js",
