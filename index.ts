@@ -41,7 +41,7 @@ class ElasticsearchWritableStream extends stream.Writable {
         try {
             await this.client.index({
                 index: this.config.index,
-                body: body
+                body: body.toString()
             })
             next();
         } catch (err) {
@@ -64,7 +64,7 @@ class ElasticsearchWritableStream extends stream.Writable {
         try {
             await this.client.bulk({
                 index: this.config.index,
-                body: body,
+                body: body.toString()
             });
             next();
         } catch (err) {
